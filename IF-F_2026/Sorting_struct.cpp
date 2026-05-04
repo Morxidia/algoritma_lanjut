@@ -33,6 +33,7 @@ int main(void)
     int sizeMahasiswa = 50;
     Mahasiswa *Array = GenRandUsers(sizeMahasiswa);
     printArray(Array, sizeMahasiswa);
+    // this should not be allowed
     printArray(Array, sizeMahasiswa);
     delete[] Array;
     return 0;
