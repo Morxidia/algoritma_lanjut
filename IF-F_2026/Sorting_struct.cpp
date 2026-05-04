@@ -33,6 +33,7 @@ int main(void)
     int sizeMahasiswa = 50;
     Mahasiswa *Array = GenRandUsers(sizeMahasiswa);
     printArray(Array, sizeMahasiswa);
+    // test this will just permitted to be push
     printArray(Array, sizeMahasiswa);
     delete[] Array;
     return 0;
