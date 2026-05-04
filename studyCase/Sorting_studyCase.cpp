@@ -99,7 +99,7 @@ Product *GenRandProduct(int size)
 {
     int totalNames = sizeof(randName) / sizeof(randName[0]);
 
-    if (size > 100)
+    if (size > totalNames)
     {
         throw invalid_argument("Size must be less than or equal to the number of unique products available.");
     }
@@ -113,7 +113,7 @@ Product *GenRandProduct(int size)
         int currentNameIndex;
         do
         {
-            currentID = GenRandNum(100, (totalNames*3)+100);
+            currentID = GenRandNum(100, (totalNames*2)+100);
             currentNameIndex = GenRandNum(0, totalNames - 1);
         } while (uniqueIDs.find(currentID) != uniqueIDs.end() || uniqueIndexes.find(currentNameIndex) != uniqueIndexes.end());
         uniqueIDs.insert(currentID);
