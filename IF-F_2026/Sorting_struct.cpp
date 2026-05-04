@@ -33,6 +33,7 @@ int main(void)
     int sizeMahasiswa = 50;
     Mahasiswa *Array = GenRandUsers(sizeMahasiswa);
     printArray(Array, sizeMahasiswa);
+    cout << "test " << endl;
     printArray(Array, sizeMahasiswa);
     delete[] Array;
     return 0;
