@@ -8,6 +8,10 @@ void printArray(int *Array, int size);
 
 int partion(int Array[], int low, int high)
 {
+  int a = Array[high];
+  int indChange = low + ((high-low)/2);
+  Array[high] = Array[indChange];
+  Array[indChange] = a;
   int pivot = Array[high];
 
   int i = low - 1;
@@ -136,7 +140,7 @@ int main(void)
   // insertionSortOptimaize(Array, sizeArr);
   // selectionsort(Array, sizeArr);
   // shellSort(Array, sizeArr);
-  // QuickSort(Array, 0, sizeArr - 1);
+  QuickSort(Array, 0, sizeArr - 1);
 
   cout << "Array Sesudah : " << endl;
   printArray(Array, sizeArr);
