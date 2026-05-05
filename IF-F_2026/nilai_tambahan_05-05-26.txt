@@ -1,0 +1,5 @@
+study case sorting dengan struct, + for asc and dsc
+130
+121
+117
+128
