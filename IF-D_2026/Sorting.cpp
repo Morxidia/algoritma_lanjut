@@ -91,7 +91,7 @@ void insertionSortOptimaize(int Array[], int size)
 void selectionsort(int *Array, int size)
 {
   int minIndex = -1;
-  for (int i = 0; i < size; i++)
+  for (int i = 0; i < size - 1; i++)
   {
     minIndex = i;
     for (int j = i + 1; j < size; j++)
