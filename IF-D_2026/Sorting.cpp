@@ -33,9 +33,9 @@ void QuickSort(int Array[], int low, int high)
 {
   if (low < high)
   {
-    int pivot = partion(Array, low, high);
-    QuickSort(Array, low, pivot - 1);
-    QuickSort(Array, pivot + 1, high);
+    int pivot = partion(Array, low, high); // untuk melakukan penempatan pivot
+    QuickSort(Array, low, pivot - 1);      // sorting kiri
+    QuickSort(Array, pivot + 1, high);     // sorting kanan
   }
 }
 
@@ -138,7 +138,7 @@ int main(void)
   // insertionSortOptimaize(Array, sizeArr);
   // selectionsort(Array, sizeArr);
   // shellSort(Array, sizeArr);
-  // QuickSort(Array, 0, sizeArr - 1);
+  QuickSort(Array, 0, sizeArr - 1);
 
   cout << "Array Sesudah : " << endl;
   printArray(Array, sizeArr);
