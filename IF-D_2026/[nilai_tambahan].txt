@@ -1,4 +1,4 @@
-06-05-26
+study case sorting dengan struct, + for asc and dsc  06-05-26
 77
 78
 89
