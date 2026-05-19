@@ -1,3 +1,5 @@
 /testing
 /.vscode
-**/.* /
+/.json
+secured/
+.vscode/
