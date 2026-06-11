@@ -168,6 +168,10 @@ int *GenRandUsers(int size)
   return Array;
 }
 
+int *test(){
+  return new int{};
+}
+
 void printArray(int *Array, int size)
 {
   cout << "[";
